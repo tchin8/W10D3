@@ -1,0 +1,96 @@
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    text-align: center;
+}
+
+div.board {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* position: absolute;
+    left: 200px; */
+}
+
+.row {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.tile {
+    /* border: 1px solid grey; */
+    background-color: lightgrey;
+    border-style: outset;
+    height: 24px;
+    width: 24px;
+    /* line-height: 1.2; */
+    text-align: center;
+    /* padding: 2px; */
+}
+
+/* .flagged {
+
+}
+/* flag
+U+26F3 */
+/* bomb
+U+1F4A */
+
+
+/* .bombed {
+    content: "";
+} */
+
+.revealed {
+    border-style: inset;
+/* reveals numbers */
+} 
+
+.modal {
+    display: none;
+    /* background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    margin: auto;
+    left: 250px;
+    top: 300px; */
+}
+
+.modal-screen {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.over{
+    display: block;
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    z-index: 1000;
+
+    /* top: 350px;
+    left: 250px; */
+
+    width: 100px;
+    padding: 50px;
+
+    /* left: px; */
+    transform: translateY(-50%);
+
+    background: white;
+    border-radius: 5px;
+}
+
